@@ -1,0 +1,200 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrapper {
+    margin-inline: 20px; 
+    margin: 0 auto;
+    /* max-width: 1280px; */
+}
+
+header {
+    display: flex;
+    align-items: center;
+    padding-block: 20px; 
+    background-color: rgb(223, 185, 145);  
+}
+
+.logo {
+    width: 50px;
+    margin-right: 40px;
+}
+.first-list {
+    display: flex;
+    list-style-type: none;
+    gap: 40px;
+    align-items: center;
+}
+
+a {
+   text-decoration: none; 
+}
+
+li a {
+    font-size: 20px;
+    color: black;
+}
+
+.more {
+    height: 20px;
+    border-style: none ;
+    background-color: rgb(223, 185, 145) ;
+    font-size: 20px;
+}
+.div-search {
+    position: relative;
+}
+
+.search {
+    border-radius: 15px;
+    margin-inline: 40px;
+    height: 27px;
+    padding-inline: 7px 20px;
+}
+
+.search-svg {
+    width: 20px;
+    position: absolute;
+    right: 48px;
+    bottom: 3px;
+}
+
+.sign-up {
+    background-color: rgb(240, 50, 50);
+    padding-inline: 15px;
+    padding-block: 5px;
+    border-radius: 15px;
+    color: black;
+}
+
+.sign-up:hover {
+    background-color: rgb(250, 103, 103);
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    background-color: #f5f5dc;
+    padding-block: 40px ; 
+}
+
+.main-text{
+    margin-left: 20px;
+}
+
+.title {
+    font-size: 45px;
+}
+
+span {
+    color: rgb(85, 85, 238);
+}
+
+p {
+    font-size: 20px;
+    font-family: "Roboto";
+}
+
+img {
+    padding-left: 20px; 
+    border-radius: 55%;
+}
+
+section {
+    padding-left: 20px;
+}
+
+.second-list {
+    margin-left: 40px;
+}
+
+.div-smile {
+    position: relative;
+    width: 260px;
+    height: 350px;
+
+}
+
+.smile {
+    filter: blur(20px);
+    width: 100%;
+}
+
+.par-smile {
+    position: absolute;
+    bottom: 180px; 
+    left: 93px 
+    
+}
+
+.div-smile:hover .smile {
+    filter: none;
+}
+
+.div-smile:hover .par-smile {
+    display: none;
+}
+
+.nav-btn {
+    position: fixed;
+    bottom: 30px;
+    right: 50px;
+    padding: 22px 27px;
+    background-color: rgb(240, 50, 50);
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: transform 0.4s ease-in-out;
+}
+
+.nav-btn:hover {
+    transform: scale(1.2);
+}
+
+
+.nav-btn:hover {
+    background-color: rgb(250, 103, 103);
+}
+
+.nav-btn-svg {
+    position: fixed; 
+    bottom: 37px;
+    right: 63px;
+    height: 30px;
+    width: 30px
+}
+
+.hamburger {
+    background-image:url(../media/Burger.png);
+    width: 24px;
+    height: 24px;
+    display: none;
+}
+
+.comment-section {
+    background-color: antiquewhite;
+}
+
+.comment {
+    margin-left: 28px;
+    font-size: 16px;
+    padding-bottom: 5px;
+}
+
+@media screen and (max-width: 1080px) {
+    .first-list {
+        display: none;
+    }
+    .hamburger {
+        display: block;
+    }
+    .title {
+        font-size: 25px;
+    }
+}
+
+
+
